@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0f1419;
+  color: #e7e9ea;
+  min-height: 100vh;
+}
+
+a {
+  color: #1d9bf0;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.card {
+  background: #1e2732;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 16px;
+  border: 1px solid #2f3942;
+}
+
+.card:hover {
+  border-color: #1d9bf0;
+  transition: border-color 0.2s;
+}
+
+.btn {
+  background: #1d9bf0;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background: #1a8cd8;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1d9bf0;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: #8b98a5;
+  margin-top: 4px;
+}
+
+.probability-bar {
+  height: 8px;
+  border-radius: 4px;
+  background: #2f3942;
+  overflow: hidden;
+  margin: 8px 0;
+}
+
+.probability-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.prob-home { background: #00ba7c; }
+.prob-draw { background: #f7b731; }
+.prob-away { background: #f4212e; }
+
+.nav {
+  background: #1e2732;
+  padding: 16px 0;
+  border-bottom: 1px solid #2f3942;
+  margin-bottom: 32px;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1d9bf0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: #8b98a5;
+  font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #e7e9ea;
+}
+
+select, input {
+  background: #273340;
+  border: 1px solid #2f3942;
+  color: #e7e9ea;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+select:focus, input:focus {
+  outline: none;
+  border-color: #1d9bf0;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  color: #8b98a5;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.badge-win { background: #00ba7c22; color: #00ba7c; }
+.badge-draw { background: #f7b73122; color: #f7b731; }
+.badge-loss { background: #f4212e22; color: #f4212e; }
